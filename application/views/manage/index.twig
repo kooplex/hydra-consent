@@ -1,0 +1,13 @@
+{% extends 'template/main.twig' %}
+
+{% block content %}
+<!--meta http-equiv="refresh"
+   content="0; url=https://idp.elte.hu">
+	Redirecting to idp.elte.hu
+	-->
+    {% for var in vars %}
+        <pre>
+        {{ dump(var) }}
+        </pre>
+    {% endfor %}
+{% endblock %}

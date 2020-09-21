@@ -1,0 +1,12 @@
+{% extends 'template/main.twig' %}
+{% block content %}
+<h1>Successful authentication</h1>
+    {{ form_open('/consent/handle') }}
+
+     <p><label for="accept"></label>
+         <input type="checkbox" name="accept" id="accept" checked hidden /></p>
+     <input type="submit" value="Click to continue"/>
+
+    {{ form_close() }}
+
+ {% endblock %}
